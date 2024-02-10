@@ -53,8 +53,11 @@ class App():
 
         self.layout = [
             [
-                sg.Text(f"{self.dir}", font=font),
-                sg.Button('Change Directory', key="CD", font=font),
+                sg.Text("(0) Select a directory", font=font)
+            ],
+            [
+                sg.InputText(default_text=f"{self.dir}", key="SELECTED DIR", font=font), 
+                sg.FolderBrowse('Select', key="SELECT", font=font),
             ],
             [
                 sg.Column(step1), 
@@ -114,6 +117,10 @@ class App():
             
             if event == sg.WIN_CLOSED:
                 break
+            
+            if event == "SELECT":
+                print(values)
+                self.dir = values["SELECTED DIR"]
             
             if event == "VCF LIST":
                 for file_name in values[event]:
