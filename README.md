@@ -56,9 +56,13 @@ This will predict ALS risk for all context vector files in the `<dataset_directo
 ### Step 4: Visualize
 ![](assets/images/DxPerceiver.visualize_all.png)
 
+*This program is currently under adjustment and is not available.
+
 ## Desktop Application
 ![](assets/images/CoVA.app.png)
 We also provide desktop application.
+
+*This application is currently under adjustment and is not available.
 
 ## Contact
 For access to the trained models or any inquiries, please contact us.
