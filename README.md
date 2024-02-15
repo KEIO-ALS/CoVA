@@ -53,13 +53,9 @@ python dx_als.py <dataset_directory> <output_directory> <trained_dx_model>
 ```
 This will predict ALS risk for all context vector files in the `<dataset_directory>`, with results stored in the `<output directory>`. Label cases as "ALS" within the data_id for cases, exclude it for controls, and use "UNKNOWN" to exclude from accuracy calculation. The trained_dx_model is not publicly available; please contact us if required.
 
-### Step 4: Visualize
-![](assets/images/DxPerceiver.visualize_all.png)
-
 *This program is currently under adjustment and is not available.
 
 ## Desktop Application
-![](assets/images/CoVA.app.png)
 We also provide desktop application.
 
 *This application is currently under adjustment and is not available.
